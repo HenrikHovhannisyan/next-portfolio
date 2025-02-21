@@ -5,7 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { NavLinks } from "@/constants";
 import Link from "next/link";
-// import Transition from "./Transition";
+import Transition from "./Transition";
 
 const Sidebar = () => {
   const [isRouting, setIsRouting] = useState(false);
