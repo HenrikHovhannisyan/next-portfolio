@@ -31,7 +31,7 @@ const ProjectSlider = () => {
             {ProImages.map((image) => (
               <div
                 className="relative group w-[100px] h-[100px]  md:w-[230px] md:h-[230px]"
-                key={image.src}
+                key={image.id}
               >
                 <Image
                   src={image.src}
@@ -61,7 +61,7 @@ const ProjectSlider = () => {
             {ProImages2.map((image) => (
               <div
                 className="relative group w-[100px] h-[100px]  md:w-[230px] md:h-[230px]"
-                key={image.src}
+                key={image.id}
               >
                 <Image
                   src={image.src}

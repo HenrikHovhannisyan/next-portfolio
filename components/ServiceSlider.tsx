@@ -6,8 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/free-mode";
 
 import { FreeMode, Pagination } from "swiper/modules";
-import { ProImages, ProImages2, ServiceData } from "@/constants";
-import Image from "next/image";
+import { ServiceData } from "@/constants";
 
 const ServiceSlider = () => {
   return (
@@ -30,7 +29,7 @@ const ServiceSlider = () => {
         modules={[FreeMode, Pagination]}
       >
         {ServiceData.map((item) => (
-          <SwiperSlide key={item.title}>
+          <SwiperSlide key={item.id}>
             <div className="rounded-md cursor-pointer flex flex-col gap-6 mb-10 group relative text-white shadow-lg rounde-xl px-6 py-8 h-[300px] w-[250px] overflow-hidden">
               <div
                 className="absolute inset-0 bg-cover bg-center"
